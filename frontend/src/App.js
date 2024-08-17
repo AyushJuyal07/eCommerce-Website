@@ -11,6 +11,7 @@ import "react-toastify/dist/ReactToastify.css"
 import { useDispatch } from "react-redux";
 import { getLoginStatus } from "./redux/features/auth/authSlice";
 import { useEffect } from "react";
+import Cart from "./pages/cart/Cart";
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/login" element = {<Login/>}/>
           <Route path="/register" element = {<Register/>}/>
           <Route path="/profile" element = {<Profile/>}/>
+          <Route path="/cart" element = {<Cart/>}/>
 
         </Routes>
         <Footer />
